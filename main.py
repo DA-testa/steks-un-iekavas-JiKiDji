@@ -18,17 +18,17 @@ def find_mismatch(text):
             if ((next ==')' and opening_brackets_stack[-1] == '(') or (next =='}' and opening_brackets_stack[-1] == '{') or (next ==']' and opening_brackets_stack[-1] == '[')):
                 opening_brackets_stack.pop()
             else:
-                return i+1
+                return (i+1)
             pass
     if (len(opening_brackets_stack) == 0):
         return 0
-    return i+1
+    return (i+1)
 
 
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    if(mismatch==1):
+    if(mismatch==0):
         print("Success")
     else:
         print(mismatch)
