@@ -34,7 +34,7 @@ def main():
     if text == "F" :
         with open(input()) as file:
             text = file.readlines()
-    else:
+    elif text == "I" :
         text = input()
     mismatch = find_mismatch(text)
     if(mismatch==0):
