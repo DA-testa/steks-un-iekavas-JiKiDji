@@ -37,7 +37,7 @@ def main():
         with open(input()) as file:
             text = file.readlines()
     else :
-         text = input()
+        text = input()
         
     mismatch = find_mismatch(text)
 #     print(mismatch)
