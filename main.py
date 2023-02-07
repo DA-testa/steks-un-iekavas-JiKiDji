@@ -30,14 +30,15 @@ def find_mismatch(text):
 
 
 def main():
-    text
     let = input()
     print(let)
+    text = input()
     if let == 'F' :
-        with open(input()) as file:
+        with open(text) as file:
             text = file.readlines()
-    elif let == 'I' :
-        text = input()
+    elif let != 'I' :
+        print(error)
+        return
         
     mismatch = find_mismatch(text)
     print(mismatch)
