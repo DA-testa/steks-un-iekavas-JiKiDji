@@ -40,6 +40,7 @@ def main():
         text = input()
         
     mismatch = find_mismatch(text)
+    print(mismatch)
     if(mismatch==0):
         print("Success")
     else:
