@@ -30,6 +30,7 @@ def find_mismatch(text):
 
 
 def main():
+    text = "" 
     let = input()
     if let == "F" :
         with open(input()) as file:
