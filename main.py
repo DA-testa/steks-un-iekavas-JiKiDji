@@ -41,6 +41,7 @@ def main():
         
     mismatch = find_mismatch(text)
     print(mismatch)
+    print(text)
     if(mismatch==0):
         print("Success")
     else:
