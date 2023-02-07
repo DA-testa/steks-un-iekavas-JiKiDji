@@ -34,7 +34,7 @@ def main():
     if text == "F" :
         with open(input()) as file:
             text = file.readlines()
-    elif text == "F":
+    elif text == "I":
         text = input()
     else:
         return
