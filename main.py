@@ -36,8 +36,8 @@ def main():
     if let == "F" :
         with open(input()) as file:
             text = file.readlines()
-    elif let == "I" :
-        #text = input()
+#     elif let == "I" :
+#         text = input()
         
     mismatch = find_mismatch(text)
     print(mismatch)
