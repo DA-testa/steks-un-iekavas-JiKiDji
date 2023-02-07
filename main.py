@@ -31,9 +31,7 @@ def find_mismatch(text):
 
 def main():
     let = input()[0]
-    print(let)
     text = input()
-    print(text)
     if let == 'F' :
         with open(text) as file:
             text = file.readlines()
@@ -43,8 +41,6 @@ def main():
         
         
     mismatch = find_mismatch(text)
-    print(mismatch)
-    print(text)
     if(mismatch==0):
         print("Success")
     else:
