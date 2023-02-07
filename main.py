@@ -33,12 +33,13 @@ def main():
     let = input()
     print(let)
     text = input()
+    print(text)
     if let == 'F' :
         with open(text) as file:
             text = file.readlines()
-    elif let != 'I' :
-        print("error")
-        return
+#     elif let == 'I' :
+        
+        
         
     mismatch = find_mismatch(text)
     print(mismatch)
