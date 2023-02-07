@@ -31,6 +31,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
+    text = input()
     mismatch = find_mismatch(text)
     if(mismatch==0):
         print("Success")
