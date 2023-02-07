@@ -32,16 +32,16 @@ def find_mismatch(text):
 def main():
     text = "" 
     let = input()
-#     print(let)
-    if let == "F" :
+    print(let)
+    if let == 'F' :
         with open(input()) as file:
             text = file.readlines()
-    else :
+    elif let == 'I' :
         text = input()
         
     mismatch = find_mismatch(text)
-#     print(mismatch)
-#     print(text)
+    print(mismatch)
+    print(text)
     if(mismatch==0):
         print("Success")
     else:
