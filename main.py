@@ -37,7 +37,7 @@ def main():
         with open(text) as file:
             text = file.readlines()
     elif let != 'I' :
-        print(error)
+        print("error")
         return
         
     mismatch = find_mismatch(text)
