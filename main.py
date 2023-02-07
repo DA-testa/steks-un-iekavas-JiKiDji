@@ -32,7 +32,7 @@ def find_mismatch(text):
 def main():
     text = "" 
     let = input()
-    print("let")
+    print(let)
     if let == "F" :
         with open(input()) as file:
             text = file.readlines()
