@@ -31,16 +31,13 @@ def find_mismatch(text):
 
 def main():
     let = input()[0]
-    text = ''
-    if let == 'F\n' :
-        with open(input()) as file:
+    text = input()
+    if let == 'F' :
+        with open(text) as file:
             text = file.readlines()
-    elif let == 'I\n' :
-        text = input()
-    else:
+    elif let != 'I' :
         return
-        
-        
+
     mismatch = find_mismatch(text)
     if(mismatch==0):
         print("Success")
