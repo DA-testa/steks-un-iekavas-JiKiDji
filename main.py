@@ -29,7 +29,7 @@ def main():
     text = input()
     if let == 'F' :
         with open(text) as file:
-            text = file.readlines()
+            text = file.read()
     elif let != 'I' :
         return
 
